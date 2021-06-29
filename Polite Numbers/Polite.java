@@ -17,7 +17,7 @@ public class Polite {
         while (true) {
             System.out.print("Enter a number: ");
             n = scanner.nextInt();	// prompt the user to enter a number
-            if (n > 0)
+            if (n > -1)
             {
                 break;
             }
@@ -27,7 +27,7 @@ public class Polite {
 		
 		
 		
-		while (count<n) // count the first n natural numbers that are not powers of 2, which will return the nth polite number
+		while (count<=n) // count the first n natural numbers that are not powers of 2, which will return the nth polite number
 		{
 			if((Math.log(i))/(Math.log(2)) != Math.round((Math.log(i))/(Math.log(2)))) // check if a number is not power of 2
 			{
